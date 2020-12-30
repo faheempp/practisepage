@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/d2cf0ef0bc.js" crossorigin="anonymous"></script>
+  <title> Tribute|About</title>
+  <link rel="stylesheet" href="css/movies.css">
+  <script type="text/javascript">
+    function openit(id){
+      if(id=="allpro"){t1="mpro";t2="tpro";t3="tgpro";t4="hpro"}
+      else if (id=="mpro"){t1="allpro";t2="tpro";t3="tgpro";t4="hpro";}
+      else if (id=="tpro"){t1="allpro";t2="mpro";t3="tgpro";t4="hpro";}
+      else if (id=="tgpro"){t1="allpro";t2="tpro";t3="tpro";t4="hpro";}
+      else if (id=="hpro"){t1="allpro";t2="tpro";t3="tgpro";t4="tgpro";}
+      closeit(t1,t2,t3,t4);
+      x=document.getElementById(id);
+      x.className="open";
+    }
+    function closeit(t1,t2,t3,t4){
+      x=document.getElementById(t1);
+      y=document.getElementById(t2);
+      z=document.getElementById(t3);
+      a=document.getElementById(t4);
+      x.className="closed";y.className="closed";z.className="closed";a.className="closed";
+    }
+    function highlight(a){
+      x=document.getElementsByClassName(a);
+      x.style.borderTop="solid thin green";
+    }
+  </script>
+ </head>
+
+ <body id="top">
+  <header>
+    <a href="home.html"><img src="images/dslogo.png" alt="DS Logo"/></a>
+    <nav><ul>
+
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="production.html">Production</a></li>
+      <li><a href="#">Follow</a>
+        <ul>
+          <li><a href="https://instagram.com/dqsalmaan" target="_blank">Instagram</a></li>
+          <li><a href="https://facebook.com/DQSalmaan" target="_blank">Facebook </a></li>
+          <li><a href="https://twitter.com/dulQuer" target="_blank">Twitter</a></li>
+          <li><a href="https://youtube.com/DQSalmaan" target="_blank">youtube</a></li>
+          <li><a href="https://dulquer.com" target="_blank">Website</a></li>
+        </ul></li>
+    </ul></nav>
+  </header>
+  <main>
+    <div class="pagehead">
+      <h2>Movies</h2>
+    </div>
+ <section class="movnav">
+     <div class="tab 1" onclick="openit('allpro');highlight('1')" onclick>All projects</div>
+     <div class="tab 2" onclick="openit('mpro')">Malayalam</div>
+     <div class="tab 3" onclick="openit('tpro')">Tamil</div>
+     <div class="tab 4" onclick="openit('hpro')">Hindi</div>
+     <div class="tab 5" onclick="openit('tgpro')">Telugu</div>
+ </section>
+ <section class="movdata">
+
+     <div class="movlist" id="allpro">
+       <img src="images/p-secshow.jpg" width="20%"alt="Second Show"/>
+       <img src="images/p-usthot.jpg" width="20%"alt="Ustad Hotel"/>
+       <img src="images/p-bangdays.jpg" width="20%"alt="Banglore Days"/>
+       <img src="images/p-charlie.jpg" width="20%"alt="Charlie"/>
+       <img src="images/p-okk.jpg" width="20%"alt="Ok Kanmani"/>
+       <img src="images/p-kpadam.jpg" width="20%"alt="Kammattipadam"/>
+       <img src="images/p-mnati.jpg" width="20%"alt="Mahanati"/>
+   </div>
+
+
+  <div class="movlist lang" id="mpro">
+    <img src="images/p-secshow.jpg" width="20%"alt="Second Show"/>
+    <img src="images/p-usthot.jpg" width="20%"alt="Ustad Hotel"/>
+    <img src="images/p-bangdays.jpg" width="20%"alt="Banglore Days"/>
+    <img src="images/p-charlie.jpg" width="20%"alt="Charlie"/>
+    <img src="images/p-kpadam.jpg" width="20%"alt="Kammattipadam"/>
+  </div>
+  <div class="movlist lang" id="tpro">
+     <img src="images/p-okk.jpg" width="20%"alt="Ok Kanmani"/>
+  </div>
+  <div class="movlist lang" id="hpro">
+     <img src="images/cardimg.jpg" width="20%"alt="Ok Kanmani"/>
+  </div>
+  <div class="movlist lang" id="tgpro">
+    <img src="images/p-mnati.jpg" width="20%"alt="Mahanati"/>
+  </div>
+
+ </section>
+
+
+
+  <br><br>
+
+  <div id="toparrow"><a href="#top"><i class="fas fa-arrow-circle-up fa-2x" aria-label="arrow up"></i></a></div><hr>
+  </main>
+  <footer>
+  <section class="follow">
+
+    <div><a class="web" href="https://dulquer.com"><attr title="Website"><img src="images/dqlogo.png" alt="dq logo" width="11%"></attr></a></div>
+    <div><a class="mail" href="mailto:info@dulquer.com"><attr title="Mail"><i class="far fa-envelope"></i> info@dulquer.com</attr></a></div>
+    <div class="fb icon"><a href="https://facebook.com/DQSalmaan" target="_blank" aria-label="Facebook"><abbr title="Facebook"><i class="fab fa-facebook fa-2x"></i></abbr> </a></div>
+    <div class="ig icon"><a href="https://instagram.com/dqsalmaan" target="_blank" aria-label="Instagram"><abbr title="Instagram"><i class="fab fa-instagram fa-2x"></i></abbr></a></div>
+    <div class="tt icon"><a href="https://twitter.com/dulQuer" target="_blank" aria-label="Twitter"><abbr title="Twitter"><i class="fab fa-twitter fa-2x"></i></abbr></a></div>
+    <div class="yt icon"><a href="https://youtube.com/DQSalmaan" target="_blank" aria-label="Youtube"><abbr title="Youtube"><i class="fab fa-youtube fa-2x"></i></abbr></a></div>
+
+  </section>
+
+  <div class="footernote">&copy; 2020 | Powered by <a href="file:///D:/HTML-CSS/FDL/fdl/fdl.html">F Digital Lab</a>.</div>
+  </footer>
+  </body>
+
+  </html>

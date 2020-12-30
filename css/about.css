@@ -1,0 +1,191 @@
+main                {margin: 0 auto}
+header              {background: -webkit-linear-gradient(#002a4c 10%,#000000 100%);margin-top: 0;
+                     display: inline-block;width: 100%;}
+
+header img          {display:inline-block;width:12%;float: left;margin-top: .3%;;
+                    }
+
+nav                 {display: inline-block;width:83%;margin-left: 4%;}
+
+nav a               {text-decoration: none;
+                    font-family: candara;
+                    font-size: 100%;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    color:#ffffff;
+                    transition: colors .01s ease-in;
+                  }
+                                       }
+
+nav ul             {list-style-type: none;text-align: center;}
+
+nav ul li          {display:inline-block;
+                    margin-bottom: .5%;margin-left: 2%;
+                    padding-right: 2%;
+                    border-right: solid 2px #88b8d4}
+
+nav ul:last-child{border:none;}
+
+nav li ul          {list-style-type: none;display: none;background: rgb(7 55 62/.6);width:10%;position:absolute;margin-top:0;padding-top: 1%;}
+
+nav li ul li       {display:inline-block;width:100%;border: none;font-size: 80%;text-align: justify;;margin-left:-1%;}
+
+nav li ul:last-child  { padding-bottom: 1%;}
+
+nav li ul:first-child {padding-top: 1%;}
+
+nav li:hover ul   {display: block;margin 0;width:10%;}
+
+nav li ul li:hover{background: rgb(7 55 62/.4)}
+
+nav a:hover       {color:#bbffaa;  border-color:#bbffaa }
+
+nav a:focus       {color:#bbffaa;  border-color:#bbffaa}
+
+main              {
+                   background: -webkit-linear-gradient(rgb(0 1 2) 5%,rgb(0 7 35) 162%);
+                  }
+
+.pagehead         {text-align: center;}
+
+h2                { text-align: center;
+                   width: auto;
+                   text-align: center;
+                   font-family: "Century Gothic";
+                   font-size: 35px;
+                   font-weight: normal;
+                   display: inline-block;
+                   margin: 3% 2% 0 2%;
+                   padding: 0% 1% 1% 1%;
+                   text-shadow: 0px 0px 6px rgb(218 180 218);
+                   letter-spacing: .3em;
+                   color: #79a3c5;
+                   box-shadow: 0px 1px 4px -3px rgb(255,255,255);
+                  }
+
+#hrh2             {width: 30%;visibility: hidden;}
+
+h3                {font-family: corbel; font-size: 29px;    padding-left: 6%;
+                  padding-top: 2%;margin-bottom:1%; }
+
+.description      {margin: 4%;}
+
+.data             {width:50%;display: inline-block;
+                   margin-top: 0%;
+                   font-family:  "Century Gothic";
+                   padding-left: 2%;padding-right: 1%;
+                   height: 350px;
+                   overflow:auto;
+                 }
+
+.images           {width:35%;display: inline-block;text-align: center;padding-bottom: 5%;}
+
+.images img       {width:40%;
+                   display: inline-block;
+                   margin: 2%;
+                   margin-bottom: 10%;
+                   float: right;}
+
+.briefimg img     {width:100%;box-shadow: 0px 0px 11px -3px rgb(255,255,255);}
+
+
+.brief             {
+                    color: white;
+                    background: inherit;
+                    box-shadow: 0px 1px 8px -3px rgba(255,225,225,.4)
+                   }
+
+
+.life              {
+                    color: black;
+                    box-shadow: 0px 0px 32px 1px rgba(255,225,225,.4);
+                    background-image: url("../images/hl3.jpg");
+                    background-size: cover;background-repeat: no-repeat;color: white;
+                   }
+.life .data        {box-shadow: 0px 0px 11px -3px rgb(255,255,255);padding-top:2%;background-color: #00000080}
+
+.life img{display: none;}
+
+table              {background: -webkit-linear-gradient(#000209 10%,#00030b 100%);
+                    text-align: center; font-family: "calibri";
+                    width:100%;padding: 2%;color:white;
+                   }
+
+
+#nos td              {font-size: 28px;animation: jackInTheBox 1s;}
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.career            {
+                    color: black;
+                    background: white;
+                    background-image: url("../images/cl2.jpg");
+                    background-size: cover;background-repeat: no-repeat;
+                    box-shadow: 0px 1px 8px -3px rgba(255,225,225,.4);
+                   }
+
+.career .data        {box-shadow: 0px 0px 11px -3px rgb(255,255,255);}
+.career img        {display: none;}
+
+#toparrow          {text-decoration: none;text-align:center;clear: both;}
+
+#toparrow a        {color: #8f919e;}
+
+#toparrow a:hover  {color:rgb(155 214 137 / .8)}
+
+footer            {background:-webkit-linear-gradient(#000516 79%,#002a4c 100%);
+                  margin-top: -1%;}
+
+.follow            {clear: both;
+                    text-align: center;
+                    margin-left: 0%;
+                    text-decoration: none;
+                    color: white;
+                   }
+
+.icon              {text-align: center;text-decoration: none;
+                    display: inline-block;width:5%;
+                    margin-top: 2%;margin-bottom: 2%;}
+
+.web               {text-align: center;width: 100%;text-decoration: none;}
+
+.mail              {color:white;text-align: center;width:100%;margin-bottom: 2%;text-decoration: none;font-family: "corbel";}
+
+.mail a:hover      {color:#cf2c87;}
+
+.ig a,.tt a,.yt a,.fb a {color:grey;}
+
+.ig a:hover        {color:#cf2c87;}
+
+.tt a:hover       {color:#00a7e7;}
+
+.yt a:hover       {color:#f70000;}
+
+.fb a:hover       {color:#4267b2;}
+
+.ig a:focus       {color:#cf2c87;}
+
+.tt a:focus       {color:#00a7e7;}
+
+.yt a:focus       {color:#f70000;}
+
+.fb a:focus       {color:#4267b2;}
+
+.footernote          {color: white; margin: 2% 0 0% 0;padding-bottom: 1%;text-align: center;font-family: arial;font-size: 95%}
+.footernote a       {text-decoration: none;}

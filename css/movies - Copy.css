@@ -1,0 +1,14 @@
+
+body{table;}
+#title{background-color: #0d2e42;
+  text-align: center;
+  line-height: 100%;
+  }
+nav{text-align: center;
+  background-color: #588aa9;
+  font-size: 20px;
+  }
+
+  /*exclu*/
+h2{color:rgba(1,34,5,.5);}
+details{display:inline-block;width:20%}
