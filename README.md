@@ -1,3 +1,3 @@
 # Practise Web page
-This site was build from scartch while was learning the basics of Web dev. Things learned was applied here. The content is similar to Dulquer Salmaan's official website. 
+This site was build from scartch while I was learning the basics of Web dev. Things learned were applied here. The content is similar to Dulquer Salmaan's official website. 
 Reference website link https://www.dulquer.com
