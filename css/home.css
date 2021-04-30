@@ -1,0 +1,97 @@
+
+body  {text-align: center;margin: 0;padding:0}
+header{background: -webkit-linear-gradient(#002a4c 10%,#000000 100%);}
+.logo {display: inline-block;position: absolute;top:0;left:6%;margin:0;padding: 0;z-index: 9;width:8%;background-color: #3a3a3a}
+.logo img { width:100%;margin:0% 0 1% 0;display: inline-block;}
+nav             {position: absolute;top: 0;left: 0;z-index: 8;display:inline-block;width:100%;
+                margin-top:0;padding: .5% 0 0.5% 0;
+                background: -webkit-linear-gradient(#002a4c78 25%,#00000099 100%);background: none;text-align: center;
+                  }
+nav a             {text-decoration: none;float: right;font-family:"Corbel";color: white;font-size: 1em;text-shadow: 0px 1px 4px black}
+.navlist          {margin:0;display: inline-block;width:80%;margin:0 0% 0 0%;}
+nav ul li         {display: inline-block;list-style-type: none;border-right: solid white thin;padding-right: 2%;margin-left: 2%}
+nav ul li:last-child {border:none;}
+
+nav ul li ul      {display: none;position: absolute;
+                   list-style-type: none;text-align: left;background: rgb(7 55 62/.4);
+                   margin-left: -8%;margin-top: 1.5%;
+                   padding-top: 1%;padding-bottom: 1%;}
+
+nav ul li ul li   {display: inline-block;width: 100%;border: none;padding-left: -3%;font-size: 90%;}
+nav ul li ul li:hover   {background: rgb(7 55 62/.9)}
+nav ul li:hover ul{display: inline-block;width: 8%;}
+nav a:hover       {color:#bbffaa;  border-color:#bbffaa }
+
+nav a:focus       {color:#bbffaa;  border-color:#bbffaa}
+
+main              {clear: both;
+                   background: none;margin-top: 0%;
+                  }
+
+#title     {background: #000000bf;
+            text-align: center;
+            display: inline-block;width:100%;height: 95vh;position: absolute;top:0;left:0;
+            margin:0 0 0 0;z-index: 7;
+            padding: 0;box-shadow: 0 0 15px 0 black;
+           }
+
+.titletext{display: inline-block;width:100%;text-align: center;margin: 18% 0 0 0;}
+.titletext h1{font-family: "High Tower Text";font-size: 300%;color: #adadad;letter-spacing: 2px;}
+.titletext h2{font-family: "Ink Free";font-weight: lighter;font-size: 150%;color: white;letter-spacing: 1px;}
+.titletext h3{font-family: "Ink Free";font-weight: lighter;font-size: 130%;color: white;letter-spacing: 1px;}
+.cover            {width:100%;height:100vh;margin:0% 0 0 0;display:inline-block;
+                    text-align: center;padding-top: 0%;
+
+                  }
+
+.photoslide img   {display: inline-block;width:100%;height: 100vh;object-fit: cover;
+
+                  box-shadow:0px 0px 4px 0px rgb(107 107 107);
+                  animation: fadeEffect 5s;
+                }
+@keyframes fadeEffect{
+  from {opacity: 0.7;}
+  to {opacity: 1;}}
+}
+
+.slidecontrol     {background-color: white;display: inline-block;width:25%;position: fixed;top:15%;right:2%}
+.arrow            {display: inline-block;z-index: 10}
+.arrow img        {display: inline-block;background: white;width:10%;}
+
+.dotbuttons i     {color:white;display: none}
+footer            {margin:0 0 -3% 0;padding:0 0 0 0}
+
+.follow            {clear: both;background: #252525;
+                    margin:0;padding:0.5% 0 .5% 0;
+                    text-decoration: none;
+                    color: white;
+                    position: absolute;top:95vh;left:0;
+                    display: inline-block;width:100%;text-align: right;
+                   }
+.follow div{display: inline-block;float:left;}
+.footernote          {color: grey; margin: 0% 15% 0% 4%;display: inline-block;width:50%;float: left;text-align: left;font-family: arial;font-size: 80%}
+.footernote a       {text-decoration: none;}
+
+.icon              {text-align: center;text-decoration: none;
+                    display:inline-block;width:4%;float: right;
+                    margin:0 0.5% 0 .5%}
+
+
+.ig a,.tt a,.yt a,.fb a,.mail a, .web a {color:grey;z-index: 9;}
+.mail a:hover      {color:white;}
+.web a:hover       {color: blue}
+.ig a:hover        {color:#cf2c87;}
+
+.tt a:hover       {color:#00a7e7;}
+
+.yt a:hover       {color:#f70000;}
+
+.fb a:hover       {color:#4267b2;}
+
+.ig a:focus       {color:#cf2c87;}
+
+.tt a:focus       {color:#00a7e7;}
+
+.yt a:focus       {color:#f70000;}
+
+.fb a:focus       {color:#4267b2;}
