@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title> Test Template</title>
+<script src="https://kit.fontawesome.com/d2cf0ef0bc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/home.css">
+  <script type="text/javascript">
+    var slideIndex=0;
+    function pushSlide(n){
+      slideIndex=slideIndex+n;
+      showSlide(slideIndex);
+    }
+    function showSlide(slideno){
+      var slides=document.getElementsByClassName("photoslide");
+      var i;
+      if(slideno>slides.length){slideIndex=1}
+      if(slideno<1){slideIndex=slides.length;}
+      for(i=0;i<slides.length;i++){
+        slides[i].style.display="none";
+      }
+      slides[slideIndex-1].style.display="inline-block";
+
+    }
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("photoslide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 7000);
+    }
+    function jumpToSlide(a){
+      slideIndex=a;
+      showSlide(a);
+    }
+  </script>
+ </head>
+ <body  onload="showSlides()">
+  <header >
+    <div class="logo">
+      <img src="images/dqlogo.png" alt="dq logo" width="11%">
+    </div>
+    <nav><ul class="navlist">
+
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="production.html">Production</a></li>
+      <li><a href="follow.html">Follow</a>
+        <ul>
+          <li><a href="https://instagram.com/dqsalmaan" target="_blank">Instagram</a></li>
+          <li><a href="https://facebook.com/DQSalmaan" target="_blank">Facebook</a> </li>
+          <li><a href="https://twitter.com/dulQuer" target="_blank">Twitter</a></li>
+          <li><a href="https://youtube.com/DQSalmaan" target="_blank">youtube</a></li>
+          <li><a href="https://dulquer.com" target="_blank">Website</a></li>
+        </ul></li>
+    </ul></nav>
+  </header>
+  <main>
+    <div id="title">
+      <div class="titletext">
+        <h1>DULQUER SALMAAN</h1>
+        <h2>Actor | Producer </h2>
+      </div>
+  </div>
+
+<div class="cover"><!--pic ratio 2.15:1-->
+  <div class="photoslide">
+    <img  src="images/dscover.jpg" alt="loading" />
+  </div>
+  <div class="photoslide">
+    <img  src="images/hl.jpg" alt="loading" />
+  </div>
+  <div class="photoslide">
+    <img  src="images/hl2.jpg" alt="loading" />
+  </div>
+  <div class="photoslide">
+    <img  src="images/hl3.jpg" alt="loading" />
+  </div>
+
+  <div class="dotbuttons">
+    <i class="fas fa-square-full dot1" onclick="jumpToSlide(1)"></i>
+    <i class="fas fa-square-full dot2" onclick="jumpToSlide(2)"></i>
+    <i class="fas fa-square-full dot3" onclick="jumpToSlide(3)"></i>
+    <i class="fas fa-square-full dot4" onclick="jumpToSlide(4)"></i>
+  </div>
+
+  </div>
+  </main>
+  <footer>
+  <section class="follow">
+    <div class="footernote">&copy; 2020 | Powered by <a href="file:///D:/HTML-CSS/FDL/fdl/fdl.html">F Digital Lab</a>.</div>
+    <div class="web icon"><a href="https://dulquer.com" target="_blank" aria-label="Official Website"><abbr title="Website"><i class="fas fa-globe fa-1x"></i></abbr></a></div>
+    <div class="mail icon"><a href="mailto:info@dulquer.com" target="_blank" aria-label="Facebook"><abbr title="Mail"><i class="fas fa-envelope fa-1x"></i></abbr> </a></div>
+    <div class="fb icon"><a href="https://facebook.com/DQSalmaan" target="_blank" aria-label="Facebook"><abbr title="Facebook"><i class="fab fa-facebook fa-1x"></i></abbr> </a></div>
+    <div class="ig icon"><a href="https://instagram.com/dqsalmaan" target="_blank" aria-label="Instagram"><abbr title="Instagram"><i class="fab fa-instagram fa-1x"></i></abbr></a></div>
+    <div class="tt icon"><a href="https://twitter.com/dulQuer" target="_blank" aria-label="Twitter"><abbr title="Twitter"><i class="fab fa-twitter fa-1x"></i></abbr></a></div>
+    <div class="yt icon"><a href="https://youtube.com/DQSalmaan" target="_blank" aria-label="Youtube"><abbr title="Youtube"><i class="fab fa-youtube fa-1x"></i></abbr></a></div>
+
+
+
+  </section>
+
+  </footer>
+  </body>
+
+  </html>
