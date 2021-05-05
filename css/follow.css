@@ -1,0 +1,228 @@
+main                {margin: 0 auto}
+header              {background: -webkit-linear-gradient(#002a4c 10%,#000000 100%);margin-top: 0;
+                     display: inline-block;width: 100%;}
+
+header img          {display:inline-block;width:12%;float: left;margin-top: .3%;;
+                    }
+
+nav                 {display: inline-block;width:83%;margin-left: 4%;}
+
+nav a               {text-decoration: none;
+                    font-family: candara;
+                    font-size: 100%;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    color:#ffffff;
+                    transition: colors .01s ease-in;
+                  }
+                                       }
+
+nav ul             {list-style-type: none;text-align: center;}
+
+nav ul li          {display:inline-block;
+                    margin-bottom: .5%;margin-left: 2%;
+                    padding-right: 2%;
+                    border-right: solid 2px #88b8d4}
+
+nav ul:last-child{border:none;}
+
+nav li ul          {list-style-type: none;display: none;background: rgb(7 55 62/.6);width:10%;position:absolute;margin-top:0;padding-top: 1%;}
+
+nav li ul li       {display:inline-block;width:100%;border: none;font-size: 80%;text-align: justify;;margin-left:-1%;}
+
+nav li ul:last-child  { padding-bottom: 1%;}
+
+nav li ul:first-child {padding-top: 1%;}
+
+nav li:hover ul   {display: block;margin 0;width:10%;}
+
+nav li ul li:hover{background: rgb(7 55 62/.4)}
+
+nav a:hover       {color:#bbffaa;  border-color:#bbffaa }
+
+nav a:focus       {color:#bbffaa;  border-color:#bbffaa}
+
+main              {
+                   background: -webkit-linear-gradient(rgb(0 1 2) 5%,rgb(0 7 35) 162%);
+                  }
+
+.pagehead         {text-align: center;}
+
+h2                { text-align: center;
+                   width: auto;
+                   text-align: center;
+                   font-family: "Century Gothic";
+                   font-size: 200%;
+                   font-weight: normal;
+                   display: inline-block;
+                   margin: 3% 2% 0 2%;
+                   padding: 0% 1% 1% 1%;
+                   text-shadow: 0px 0px 6px rgb(218 180 218);
+                   letter-spacing: .3em;
+                   color: #79a3c5;
+                   box-shadow: 0px 1px 4px -3px rgb(255,255,255);
+                  }
+.pagebody         {}
+h3                {color: white;
+                   font-family: "candara";
+                  font-size: 120%;
+                  text-align: center;
+                    }
+.contact,.followdq {text-align: center;
+                    display: inline-block;
+                    width:40%;
+                    float: left;
+
+                    margin: 4% 2% 4% 2%;
+                    padding: 2% 2% 4% 2%;
+                    }
+
+.contact form label   {}
+.contact form input  {
+                      display: inline-block;width: 80%;
+                      margin: 2% 0 2% 0;
+                      color:white;
+                      border-color:  white ;
+                      border-width: .1px;
+                      background-color: inherit;
+                      line-height: 200%;
+                      transition-property: border-color;
+                      transition-delay: 0s;
+                      transition-duration: .3s;
+
+                    }
+
+.contact textarea  {
+                    margin: 2% 0 2% 0;
+                    width: 80%;
+                    height:15em;
+                    border-color:  white ;
+                    border-width: thin;
+                    background-color:inherit;
+                    color: white;
+                    transition-property: border-color;
+                    transition-delay: 0s;
+                    transition-duration: .3s
+}
+.contact textarea:hover,.contact form input:hover{border-color: red;}
+#submit  {
+                   width:20%;
+                   text-align: center;
+                   transition-property: box-shadow;
+                   transition-delay: 0s;
+                   transition-duration: .3s;
+                   display: inline-block;
+                   float:left;
+                   margin-left:9%;
+
+                  }
+#submit:hover     {box-shadow: 0px 0px 3px 3px rgb(241 0 0 / 40%);border-color:none;}
+
+.followdq a        {
+                    text-decoration: none;
+                    display: inline-block;
+                    border: solid white thin;
+                    width:80%;
+
+                    text-align: center;
+                    margin: 2% 0 0 2%;
+                    padding: .5% 0 0 .5%;
+                    line-height: 150%;
+
+                    ima
+}
+#toparrow          {text-decoration: none;text-align:center;clear: both;}
+
+#toparrow a        {color: #8f919e;}
+
+#toparrow a:hover  {color:rgb(155 214 137 / .8)}
+
+footer            {background:-webkit-linear-gradient(#000516 79%,#002a4c 100%);
+                  margin-top: -1%;}
+
+.follow            {clear: both;
+                    text-align: center;
+                    margin-left: 0%;
+                    text-decoration: none;
+                    color: white;
+                   }
+
+.icon              {text-align: center;text-decoration: none;
+                    display: inline-block;width:5%;
+                    margin-top: 2%;margin-bottom: 2%;}
+
+.web               {text-align: center;width: 100%;text-decoration: none;}
+
+.mail              {color:white;text-align: center;width:100%;margin-bottom: 2%;text-decoration: none;font-family: "corbel";}
+
+.mail a:hover      {color:#cf2c87;}
+
+.ig a,.tt a,.yt a,.fb a {color:grey;}
+
+.ig a:hover        {color:#cf2c87;}
+
+.tt a:hover       {color:#00a7e7;}
+
+.yt a:hover       {color:#f70000;}
+
+.fb a:hover       {color:#4267b2;}
+
+.ig a:focus       {color:#cf2c87;}
+
+.tt a:focus       {color:#00a7e7;}
+
+.yt a:focus       {color:#f70000;}
+
+.fb a:focus       {color:#4267b2;}
+
+.footernote          {color: white; margin: 2% 0 0% 0;padding-bottom: 1%;text-align: center;font-family: arial;font-size: 80%}
+.footernote a       {text-decoration: none;}
+
+@media screen and (max-width:720px) {
+    nav {display:  inline-block;
+         width: 30%;
+         position:absolute;
+         left: 0%;
+         top: 14%;
+         background-color: white;
+            }
+    nav a{display: block;
+
+      }
+   header{margin-top: -1%;}
+   #dslogo   {
+                display: inline-block;
+                margin: 1% 0% 1% 33%;
+                text-align:center;
+                width: 30%;
+              }
+#headlogo{text-align: center;width: 100%;text-decoration: none;}
+
+
+
+h2         { text-align: center;
+             width: auto;
+             text-align: center;
+             font-family: "Century Gothic";
+             font-size: 100%;
+             font-weight: normal;
+             display: inline-block;
+             margin: 12% 2% 0 2%;
+             padding: 0% 1% 1% 1%;
+             text-shadow: 0px 0px 6px rgb(218 180 218);
+             letter-spacing: .3em;
+             color: #79a3c5;
+             box-shadow: 0px 1px 4px -3px rgb(255,255,255);
+              }
+.contact,.followdq {
+              display: inline-block;
+              width:90%;
+              box-shadow: 0px 1px 8px -3px rgba(255,225,225,.4);
+              margin: 6% 2% 4% 2%;
+              padding: 2% 2% 4% 2%;
+              text-align: center;
+                                  }
+  .icon{padding: 2% 2% 2% 2%;}
+  .follow{margin-top: -3%;}
+
+}
