@@ -1,0 +1,59 @@
+home navigation
+nav{text-align: center;
+  font-size: 110%;
+  }
+
+nav a{
+  color:#88b8d4;
+  display: inline-block;
+  text-decoration: none;
+  font-family: candara;
+  text-transform: uppercase;
+}
+
+nav ul li{display:inline-block;width:10%;margin-bottom: 1%;border-top: solid 2px #88b8d4}
+nav li ul{display: none;background: #000a10b3;width:10%;position:absolute;margin-top:0}
+nav li ul li{display:inline-block;width:100%;border: none;font-size: 90%;text-align: justify;;margin-left:-1%;}
+nav li ul:last-child{padding-bottom: 1%;}
+nav li ul:first-child{padding-top: 1%;}
+nav li:hover ul{display: block;background-color: #000a10b3;margin 0;width:10%;}
+nav a:hover{color:#bbffaa;  border-width: medium;}
+nav a:focus{color:#bbffaa;  border-width: medium;}
+
+about navigation:
+nav                 {display: inline-block;width:80%;margin-left: 0;}
+
+nav a               {text-decoration: none;
+                     font-family: candara;
+                     font-size: 100%;
+                     text-transform: uppercase;
+                     display: inline-block;
+                     padding-top: 3%;
+                     padding-bottom: 1%;
+                     padding-left: 3%;
+                     color:#ffffff;
+                     transition: colors .01s ease-in;
+
+                   }
+
+nav ul             {list-style-type: none;text-align: center;}
+
+nav ul li          {display:inline-block;width:15%;margin-bottom: .5%;border-right: solid 2px #88b8d4}
+
+nav ul:last-child{border:none;}
+
+nav li ul          {list-style-type: none;display: none;background: rgb(7 55 62/.6);width:10%;position:absolute;margin-top:0;padding-top: 1%;}
+
+nav li ul li       {display:inline-block;width:100%;border: none;font-size: 80%;text-align: justify;;margin-left:-1%;}
+
+nav li ul:last-child  { padding-bottom: 1%;}
+
+nav li ul:first-child {padding-top: 1%;}
+
+nav li:hover ul   {display: block;margin 0;width:10%;}
+
+nav li ul li:hover{background: rgb(7 55 62/.4)}
+
+nav a:hover       {color:#bbffaa;  border-color:#bbffaa }
+
+nav a:focus       {color:#bbffaa;  border-color:#bbffaa}
