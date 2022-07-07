@@ -1,41 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="utf-8">
   <script src="https://kit.fontawesome.com/d2cf0ef0bc.js" crossorigin="anonymous"></script>
-  <title> Tribute|About</title>
+  <title> DS|Interviews</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/interview.css">
- </head>
- <body id="top">
-  <header>
-    <a href="home.html"><img src="images/dslogo.png" alt="DS Logo"/></a>
-    <nav><ul>
+  <script>
+    function openNav() {
+      var openelement = document.getElementsByClassName("mobile-nav-container");
+      openelement[0].style.display = "inline-block";
+      openelement[0].style.animation = "fadeEffect 1s"
+      //var menuicon = document.getElementsByClassName("baricon");
+      menuicon[0].style.display = "none"
+    }
 
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="interviews.html">Interviews</a></li>
-      <li><a href="movies.html">Movies</a></li>
-      <li><a href="production.html">Production</a></li>
-      <li><a href="#">Follow</a>
-        <ul>
-          <li><a href="https://instagram.com/dqsalmaan" target="_blank">Instagram</a></li>
-          <li><a href="https://facebook.com/DQSalmaan" target="_blank">Facebook </a></li>
-          <li><a href="https://twitter.com/dulQuer" target="_blank">Twitter</a></li>
-          <li><a href="https://youtube.com/DQSalmaan" target="_blank">youtube</a></li>
-          <li><a href="https://dulquer.com" target="_blank">Website</a></li>
-        </ul></li>
-    </ul></nav>
+    function closeNav() {
+      var closeelement = document.getElementsByClassName("mobile-nav-container");
+      closeelement[0].style.display = "none";
+      closeelement[0].style.animation = "fadeEffect 1s"
+      //var menuicon = document.getElementsByClassName("baricon");
+      //menuicon[0].style.display = "inline-block"
+    }
+  </script>
+</head>
+
+<body id="top">
+  <header>
+    <div class="logo">
+      <img src="images/dqlogo.png" alt="dq logo" width="11%">
+    </div>
+    <nav>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="production.html">Production</a></li>
+        <li><a href="interviews.html">Interviews</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="follow.html">Follow</a>
+          <ul>
+            <li><a href="https://instagram.com/dqsalmaan" target="_blank">Instagram</a></li>
+            <li><a href="https://facebook.com/DQSalmaan" target="_blank">Facebook</a> </li>
+            <li><a href="https://twitter.com/dulQuer" target="_blank">Twitter</a></li>
+            <li><a href="https://youtube.com/DQSalmaan" target="_blank">youtube</a></li>
+            <li><a href="https://dulquer.com" target="_blank">Website</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
+
+  <!--Header for mobile site-->
+  <div class="mobileheader">
+    <div class="mobilelogo">
+      <img src="images/dslogo.png" alt="dq logo" width="11%">
+    </div>
+    <div class="menuicon">
+      <img class="navbutton" src="icons/menu.png" alt="" onclick="openNav()">
+    </div>
+    <!--mobile navbar-->
+    <div class="mobile-nav-container">
+      <div class="closeicon">
+        <img class="closebutton" src="icons/close1.png" alt="" onclick="closeNav()">
+      </div>
+      <div class="mobilenavlist">
+        <div class="mobilenavitem"><a href="index.html" onclick="closeNav()">Home</a></div>
+        <div class="mobilenavitem"><a href="about.html" onclick="closeNav()">About Me</a></div>
+        <div class="mobilenavitem"><a href="movies.html" onclick="closeNav()">Movies</a></div>
+        <div class="mobilenavitem"><a href="production.html" onclick="closeNav()">Production</a></div>
+        <div class="mobilenavitem"><a href="interviews.html" onclick="closeNav()">Interviews</a></div>
+        <div class="mobilenavitem"><a href="gallery.html" onclick="closeNav()">Gallery</a></div>
+        <div class="mobilenavitem"><a href="follow.html" onclick="closeNav()">Follow</a></div>
+      </div>
+      <div class="mobilenavmediaicons">
+        <div class="fb icon"><a href="https://facebook.com/DQSalmaan" target="_blank" aria-label="Facebook"><abbr
+              title="Facebook"><i class="fab fa-facebook fa-1x"></i></abbr> </a></div>
+        <div class="ig icon"><a href="https://instagram.com/dqsalmaan" target="_blank" aria-label="Instagram"><abbr
+              title="Instagram"><i class="fab fa-instagram fa-1x"></i></abbr></a></div>
+        <div class="tt icon"><a href="https://twitter.com/dulQuer" target="_blank" aria-label="Twitter"><abbr
+              title="Twitter"><i class="fab fa-twitter fa-1x"></i></abbr></a></div>
+        <div class="yt icon"><a href="https://youtube.com/DQSalmaan" target="_blank" aria-label="Youtube"><abbr
+              title="Youtube"><i class="fab fa-youtube fa-1x"></i></abbr></a></div>
+
+      </div>
+    </div>
+  </div>
   <main>
-    <div class="pagehead">
-      <h2>Interviews</h2>
-          </div>
+      <div class="pagehead">
+        <h2>Interviews</h2>
+        <hr class="h2hr">
+      </div>
+
   <div class="interviews">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qbVYThedHfk" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   <iframe  src="https://www.youtube.com/embed/POZOJ3vYy-A"
    allow="accelerometer;controls; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <iframe  src="https://www.youtube.com/watch?v=qbVYThedHfk"
-    allow="accelerometer;controls; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/i3Jtvl5xFBs" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
   <div id="toparrow"><a href="#top"><i class="fas fa-arrow-circle-up fa-2x" aria-label="arrow up"></i></a></div><hr>
 </main>
@@ -51,7 +117,7 @@
 
   </section>
 
-  <div class="footernote">&copy; 2020 | Powered by <a href="file:///D:/HTML-CSS/FDL/fdl/fdl.html">F Digital Lab</a>.</div>
+  <div class="footernote">&copy; 2022</div>
 </footer>
  </body>
 

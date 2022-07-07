@@ -3,45 +3,106 @@
  <head>
   <meta charset="utf-8">
   <script src="https://kit.fontawesome.com/d2cf0ef0bc.js" crossorigin="anonymous"></script>
-  <title> Tribute|About</title>
+  <title> DS|About</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/about.css">
+  <script>
+    function openNav() {
+        var openelement = document.getElementsByClassName("mobile-nav-container");
+        openelement[0].style.display = "inline-block";
+        openelement[0].style.animation = "fadeEffect 1s"
+        //var menuicon = document.getElementsByClassName("baricon");
+        menuicon[0].style.display = "none"
+      }
+
+      function closeNav() {
+        var closeelement = document.getElementsByClassName("mobile-nav-container");
+        closeelement[0].style.display = "none";
+        closeelement[0].style.animation = "fadeEffect 1s"
+        //var menuicon = document.getElementsByClassName("baricon");
+        //menuicon[0].style.display = "inline-block"
+      }
+  </script>
  </head>
 
  <body id="top">
   <header>
-    <a href="home.html"><img src="images/dslogo.png" alt="DS Logo"/></a>
-    <nav><ul>
-
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="interviews.html">Interviews</a></li>
-      <li><a href="movies.html">Movies</a></li>
-      <li><a href="production.html">Production</a></li>
-      <li><a href="#">Follow</a>
-        <ul>
-          <li><a href="https://instagram.com/dqsalmaan" target="_blank">Instagram</a></li>
-          <li><a href="https://facebook.com/DQSalmaan" target="_blank">Facebook </a></li>
-          <li><a href="https://twitter.com/dulQuer" target="_blank">Twitter</a></li>
-          <li><a href="https://youtube.com/DQSalmaan" target="_blank">youtube</a></li>
-          <li><a href="https://dulquer.com" target="_blank">Website</a></li>
-        </ul></li>
-    </ul></nav>
+    <div class="logo">
+      <img src="images/dqlogo.png" alt="dq logo" width="11%">
+    </div>
+    <nav>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="production.html">Production</a></li>
+        <li><a href="interviews.html">Interviews</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="follow.html">Follow</a>
+          <ul>
+            <li><a href="https://instagram.com/dqsalmaan" target="_blank">Instagram</a></li>
+            <li><a href="https://facebook.com/DQSalmaan" target="_blank">Facebook</a> </li>
+            <li><a href="https://twitter.com/dulQuer" target="_blank">Twitter</a></li>
+            <li><a href="https://youtube.com/DQSalmaan" target="_blank">youtube</a></li>
+            <li><a href="https://dulquer.com" target="_blank">Website</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
+
+  <!--Header for mobile site-->
+  <div class="mobileheader">
+    <div class="mobilelogo">
+      <img src="images/dslogo.png" alt="dq logo" width="11%">
+    </div>
+    <div class="menuicon">
+      <img class="navbutton" src="icons/menu.png" alt="" onclick="openNav()">
+    </div>
+    <!--mobile navbar-->
+    <div class="mobile-nav-container"> 
+      <div class="closeicon">
+        <img class="closebutton" src="icons/close1.png" alt="" onclick="closeNav()">
+      </div>
+      <div class="mobilenavlist">
+        <div class="mobilenavitem"><a href="index.html" onclick="closeNav()">Home</a></div>
+        <div class="mobilenavitem"><a href="about.html" onclick="closeNav()">About Me</a></div>
+        <div class="mobilenavitem"><a href="movies.html" onclick="closeNav()">Movies</a></div>
+        <div class="mobilenavitem"><a href="production.html" onclick="closeNav()">Production</a></div>
+        <div class="mobilenavitem"><a href="interviews.html" onclick="closeNav()">Interviews</a></div>
+        <div class="mobilenavitem"><a href="gallery.html" onclick="closeNav()">Gallery</a></div>
+        <div class="mobilenavitem"><a href="follow.html" onclick="closeNav()">Follow</a></div>
+      </div>
+      <div class="mobilenavmediaicons">
+        <div class="fb icon"><a href="https://facebook.com/DQSalmaan" target="_blank" aria-label="Facebook"><abbr
+              title="Facebook"><i class="fab fa-facebook fa-1x"></i></abbr> </a></div>
+        <div class="ig icon"><a href="https://instagram.com/dqsalmaan" target="_blank" aria-label="Instagram"><abbr
+              title="Instagram"><i class="fab fa-instagram fa-1x"></i></abbr></a></div>
+        <div class="tt icon"><a href="https://twitter.com/dulQuer" target="_blank" aria-label="Twitter"><abbr title="Twitter"><i
+                class="fab fa-twitter fa-1x"></i></abbr></a></div>
+        <div class="yt icon"><a href="https://youtube.com/DQSalmaan" target="_blank" aria-label="Youtube"><abbr
+              title="Youtube"><i class="fab fa-youtube fa-1x"></i></abbr></a></div>
+
+      </div>
+    </div>
+  </div>
   <main>
 
+  
   <div class="pagehead">
     <h2>About Dulquer Salmaan</h2>
+    <hr class="h2hr">
       </div>
 
   <section class="description brief">
     <h3>In brief</h3>
-    <div class="description data"><p>Dulquer Salmaan is the son of renowned actor Mammootty.
+    <div class="description brieftext"><p>Dulquer Salmaan is the son of renowned actor Mammootty.
                 <br>Dulquer made his debut with the Malayalam film Second Show (2012) . His next appearance was in the lead role as Faizal in Ustad Hotel (2012) directed by Anwar Rasheed. The movie was a great commercial success and won the National Award for Best Popular Film. His debut in Tamil was through Balaji Mohan's Vaayai Moodi Pesavum(2014). Dulquer is a two time recipient of the Filmfare Award for Best Male Debut in 2012 and 2014 for his performances in the Malayalam film Second Show and the Tamil film Vaayai Moodi Pesavum. He was also nominated for the Filmfare Award for Best Actor for his performance in Ustad Hotel and Njaan. His performance in Charlie (2015) won him the Kerala State Film Award for Best Actor in 2015.
                 <br>Dulquer Salmaan has been voted as the Kochi Times Most Desirable Men 2014 based on online polls conducted by the India Times Group. Dulquer was ranked 7th in the Chennai Times Most Desirable Men 2014 and ranked 45th in Times Most Desirable Men 2014 in India.
   </p></div>
-  <div class="images briefimg"><img src="images/dscover.jpg" alt="loading"/></div>
+  <div class="imagecontainer briefimg">
+    <img src="images/ds111.webp" alt="loading"/>
+  </div>
   </section>
   <br>
   <section class="description life">
@@ -52,21 +113,28 @@
   </p></div>
 
   </section>
-
-  <table>
-    <tr id="iconrow">
-      <td><i class="fas fa-film fa-5x" aria-label="Movies"></i></td>
-      <td><i class="fas fa-award fa-5x" aria-label="Nominations"></i></td>
-      <td><i class="fas fa-medal fa-5x" aria-label="awards"></i></td>
-      <td><i class="fas fa-language fa-5x" aria-label="languages"></i></td>
-    </tr>
-    <tr id="nos">
-      <td>26</td><td>39</td><td>29</td><td>4</td>
-    </tr>
-    <tr>
-      <td>Movies</td><td>Nominations</td><td>Awards</td><td>languages</td>
-    </tr>
-  </table>
+  <div class="achievementsection">
+    <div class="achievement">
+      <i class="fas fa-film fa-2x" aria-label="Movies"></i>
+      <div>26</div>
+      <div class="achievementname">Movies</div>
+    </div>
+    <div class="achievement">
+      <i class="fas fa-award fa-2x" aria-label="Nominations"></i>
+      <div>39</div>
+      <div class="achievementname">Nominations</div>
+    </div>
+    <div class="achievement">
+      <i class="fas fa-medal fa-2x" aria-label="awards"></i>
+      <div>29</div>
+      <div class="achievementname">Awards</div>
+    </div>
+    <div class="achievement">
+      <i class="fas fa-language fa-2x" aria-label="languages"></i>
+      <div>4</div>
+      <div class="achievementname">Languages</div>
+    </div>
+  </div>
 
   <section class="description career">
     <h3>Career</h3>
@@ -91,7 +159,7 @@
 
   </section>
 
-  <div class="footernote">&copy; 2020 | Powered by <a href="file:///D:/HTML-CSS/FDL/fdl/fdl.html">F Digital Lab</a>.</div>
+  <div class="footernote">&copy; 2022</div>
 </footer>
  </body>
 
