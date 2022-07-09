@@ -1,9 +1,12 @@
 body {
   margin: 0;
   background: #000000d7;
+  font-family: "Poppins";
 }
 
-main {}
+main {
+  margin: 5% 0 0 0
+}
 
 header {
   background: ;
@@ -44,9 +47,9 @@ nav a {
   text-decoration: none;
   float: right;
   font-family: "Source Sans Pro";
-  font-weight: 500;
+    font-weight: 500;
   color: white;
-  font-size: .9em;
+  font-size: 1em;
   text-shadow: 0px 1px 4px black
 }
 
@@ -107,7 +110,6 @@ nav a:focus {
   color: #bbffaa;
   border-color: #bbffaa
 }
-
 .mobileheader {
   display: none
 }
@@ -115,7 +117,9 @@ nav a:focus {
 .mobile-nav-container {
   display: none;
 }
-
+main {
+  background: ;
+}
 
 .pagehead {
   text-align: center;
@@ -134,99 +138,22 @@ h2 {
   padding: 0% 1% 1% 1%;
   letter-spacing: .3em;
   color: #ffffff;
-  bx-shadow: 0px 1px 4px -3px rgb(255, 255, 255);
 }
 
 .pagehead hr.h2hr {
   width: 30%;
 }
 
-h3 {
-  font-family: "Poppins";
-  font-size: 29px;
-  padding-left: 6%;
-  padding-top: 2%;
-  margin-bottom: 1%;
-}
-.pagebody         {}
-h3                {color: white;
-                   font-family: "candara";
-                  font-size: 120%;
-                  text-align: center;
-                    }
-.contact,.followdq {text-align: center;
-                    display: inline-block;
-                    width:40%;
-                    float: left;
-                    margin: 4% 2% 4% 2%;
-                    padding: 2% 2% 4% 2%;
-                    }
 
-.contact form label   {}
-.contact form input  {
-                      display: inline-block;width: 80%;
-                      margin: 2% 0 2% 0;
-                      color:white;
-                      border-color:  white ;
-                      border-width: .1px;
-                      background-color: inherit;
-                      line-height: 200%;
-                      transition-property: border-color;
-                      transition-delay: 0s;
-                      transition-duration: .3s;
+h3  {font-family: "Poppins"; font-size: 29px;    padding-left: 6%;
+                  padding-top: 2%;margin-bottom:1%; }
 
-                    }
 
-.contact textarea  {
-                    margin: 2% 0 2% 0;
-                    width: 80%;
-                    height:15em;
-                    border-color:  white ;
-                    border-width: thin;
-                    background-color:inherit;
-                    color: white;
-                    transition-property: border-color;
-                    transition-delay: 0s;
-                    transition-duration: .3s
-}
-.contact textarea:hover,.contact form input:hover{border-color: red;}
-#submit  {
-                   width:20%;
-                   text-align: center;
-                   transition-property: box-shadow;
-                   transition-delay: 0s;
-                   transition-duration: .3s;
-                   display: inline-block;
-                   float:left;
-                   margin-left:9%;
+#toparrow          {text-decoration: none;text-align:center;clear: both;}
 
-                  }
-#submit:hover     {box-shadow: 0px 0px 3px 3px rgb(241 0 0 / 40%);border-color:none;}
+#toparrow a        {color: #8f919e;}
 
-.followdq a        {
-                    text-decoration: none;
-                    display: inline-block;
-                    border: solid white thin;
-                    width:80%;
-                    text-align: center;
-                    margin: 2% 0 0 2%;
-                    padding: .5% 0 0 .5%;
-                    line-height: 150%;
-
-                    ima
-}#toparrow {
-  text-decoration: none;
-  text-align: center;
-  clear: both;
-}
-
-#toparrow a {
-  color: #8f919e;
-}
-
-#toparrow a:hover {
-  color: rgb(155 214 137 / .8)
-}
+#toparrow a:hover  {color:rgb(155 214 137 / .8)}
 
 footer {
   background: -webkit-linear-gradient(#282828 10%, #000000 96%);
@@ -311,18 +238,16 @@ footer {
 
 .footernote {
   color: white;
+  margin: 2% 0 0% 0;
+  padding-bottom: 1%;
   text-align: center;
-  width: 100%;
-  margin-bottom: 2%;
-  text-decoration: none;
   font-family: "Poppins";
-  font-size: 90%;
+    font-size: 80%;
 }
 
 .footernote a {
   text-decoration: none;
 }
-
 
 @media only screen and (max-width:768px) {
   header {
@@ -374,12 +299,12 @@ footer {
     background-color: #3a3a3a;
     animation: fadeEffect .08s
   }
-
+  
   @keyframes fadeEffect {
     from {
       opacity: 0
     }
-
+  
     to {
       opacity: 1
     }
@@ -427,16 +352,15 @@ footer {
     margin: 5% 0 0 0;
   }
 
-    .contact{
-      width: 90%;
-    }
-    .followdq{
-      width: 90%;
-    }
-.icon {
-  margin: 2% 2% 2% 2%
-}
-}
+  .brieftext {
+    width: 90%;
+  }
 
-
------------------------------
+  .imagecontainer {
+    width: 100%;
+    margin: 7% 0 0 0;
+  }
+  .icon {
+    margin: 2% 2% 2% 2%
+  }
+}
